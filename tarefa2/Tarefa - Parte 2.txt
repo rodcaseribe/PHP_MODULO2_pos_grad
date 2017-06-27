@@ -1,0 +1,2 @@
+Poderia ser usado sim, pois corrigiria a questão caso fosse usado um "if" com a questão certa dependendo a porcentagem definida
+pelo programador.
