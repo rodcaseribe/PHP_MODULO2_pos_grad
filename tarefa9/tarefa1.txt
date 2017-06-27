@@ -1,0 +1,22 @@
+A checagem pode ser feita até antes de executar o php diretamente
+no banco de dados como Mysql.
+Exemplo:
+
+mysql -u root -pPASSWORD //entro no mysql com credencias de root e senha para acessar todos os bancos.
+show databases;  //Listo todos os bancos de dados
+use NOMEDOBD; // Seleciono qual banco quero utilizar
+show tables; //Listo todas as tabelas desse banco;
+SELECT * FROM USUARIOS; //Listo todos os dados da tabela USUARIOS
+SELECT usuario, senha FROM USUARIOS; //Listo os campos usuario e senha da tabela USUARIOS.
+
+As senhas podem estar armazenadas em HASH conforme foi configurado o banco.
+Normalmente em MD5, podendo ser SHA1, SHA256 entre outros.
+
+
+
+A sintaxe específica do PHP que faz esse verificação:
+
+$sql = 'select * from usuarios where username ="'.$username.'" and password
+="'.$password.'"'; // listo usuário e senha quando o usuário e senha for o que 
+eu mesmo já pré-determinei.
+

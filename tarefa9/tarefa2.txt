@@ -1,0 +1,39 @@
+Muitos programadores não se atentam as falhas de segurança pela pressão de
+entregas de trabalhos e também por falta de conhecimento, podendo sofrer
+ataques de SQL Injection para programação de Back End como no PHP, e Mysql
+e XSS como no de Front-End (HTML Injection, CSS Injection).
+Alguns programadores também deixam o phpinfo.php liberados externamente pelo Apache,
+IIS e Nginx, sendo assim o atacante tem as informações de módulos, versões de apache
+PHP, Mysql e S.O.
+Auditoria por SELECT utilizando SQL INJECTION básico.
+
+
+Retorno de erro = Vulnerável.
+
+Testando se x é igual a x.
+SELECT usuario FROM usuarios WHERE nome = 'anything' OR 'x'='x';
+
+
+
+........................................= 'x' AND cidade IS NULL; -- '; //observando se consigo injeção de cónsigo e observar outras consultas em tabelas.
+
+
+........................................= 'x'; DROP TABLE senhas; --'; //dropando a tabela senhas.
+
+
+Outros programadores utilizam ainda o PHPMyAdmin com versão exploitável.
+Alguns programadores também dão permissão de GRANT ALL PREVILIGIES de acesso a todos os bancos,
+podendo assim mesmo com permissão de usuário, de se executar um mysql_exec , baixar um arquivo, e elevar os privilégios,
+exploitando o Kernel em C++ ou python e tornando-se root.
+Técnicas de PDO minimizam o risco de SQL Injection.
+Se atentar as variáveis Boolean, e int para fazer um boa filtragem.
+Não manter Information_schema.
+Fazer auditoria como Pentest é uma boa prática.
+Utilizar WAF (Web Application Firewall para DROPAR as requisições maliciosas).
+Utilizar SQL Injection sem ferramentas, utilizando obfuscassão de código e sanar os problemas.
+Mesmo assim não é garantido que voçê esteja segura, conforme a tecnologia avança e esse conhecimento
+se torna público, mais o baixo nível é valorizado para criação de exploits, e exploração de códigos em
+ring3,2,1,0 e cada vez mais escassa a publicação de zero days.
+
+
+
