@@ -1,0 +1,3 @@
+O register_globals cria variáveis já setadas no HTML, facilitando o uso de scripts pequenos e automátizados,
+porém para algo profissional é recomendado que seja desabilitado no php.ini para o mais fácil entendimento e
+organização de código, onde a variável pode ser setada de maneira que o programador não saiba da onde veio.

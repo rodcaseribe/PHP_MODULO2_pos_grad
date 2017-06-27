@@ -1,0 +1,2 @@
+Cookies são armazenados pelo navegador, ou seja, Client-Side, já o session são armazenados
+pelo servidor, sendo mais interessante para manipular informações de usuários.
