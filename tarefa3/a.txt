@@ -1,0 +1,1 @@
+a) Atribuir como ponto fundamental que a posição inicial nunca será igual, uma boa prática usada é o tempo do computador, dessa forma a probabilidade que um número exatamente igual ao outro na próxima execução seja igual, será muito remota. 
